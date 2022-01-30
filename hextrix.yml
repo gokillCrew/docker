@@ -28,7 +28,7 @@
 
     - name: run container
       docker_container:
-        name: docker-ansible       
+        name: docker-hextrix       
         image: "{{ image }}"
         state: started
         published_ports:
