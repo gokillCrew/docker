@@ -1,6 +1,6 @@
 - hosts: server
   vars:
-    image: gokillcrew/web-custom
+    image: gokillcrew/docker
   tasks:
     - name: instal python-docker di ubuntu
       apt:
@@ -28,9 +28,9 @@
 
     - name: run container
       docker_container:
-        name: docker-ansible       
+        name: docker-docker       
         image: "{{ image }}"
         state: started
         published_ports:
-          - 10000:80
+          - 11000:80
         recreate: yes
