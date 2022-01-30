@@ -32,5 +32,5 @@
         image: "{{ image }}"
         state: started
         published_ports:
-          - 10002:80
+          - 10012:80
         recreate: yes
